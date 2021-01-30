@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0;
+}
+
+body, input {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  background: rgb(30, 30, 30);
+  margin: 0 -.5rem;
+  color: white;
+  padding: .5rem 1.5rem;
+  font-weight: normal;
+}

@@ -1,0 +1,12 @@
+<div class="bitmask-container">
+  <input type="number" [(ngModel)]="bitmask" (keyup)="updateChecks()" class="bitmask-input">
+  <span>{{bitmask?.toString(2).padStart(padSize, '0')}}</span>
+</div>
+
+<ul class="checks">
+  <li *ngFor="let val of values">
+    <label for="check_{{val.value}}">
+      <input type="checkbox" [checked]="val.checked" (click)="check(val)" id="check_{{val.value}}">{{val.name}}
+    </label>
+  </li>
+</ul>
